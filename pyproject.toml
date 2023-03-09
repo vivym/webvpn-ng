@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "webvpn-ng"
+version = "0.1.0"
+description = ""
+authors = ["Ming Yang <ymviv@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "webvpn_ng"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+typer = {extras = ["all"], version = "^0.7.0"}
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.2"
+
+[tool.poetry.scripts]
+wvpn = "webvpn_ng.cmd:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
