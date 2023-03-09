@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "webvpn-ng"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Ming Yang <ymviv@qq.com>"]
 license = "MIT"
