@@ -26,7 +26,7 @@ wvpn login USERNAME
 
 ```bash
 # terminal #1
-webvpn forward --port 2222 --rhost 10.251.0.24
+wvpn forward --port 2222 --rhost 10.251.0.24
 
 # terminal #2
 ssh -p 2222 yangming@localhost
@@ -39,7 +39,7 @@ scp -P 2222 yangming@localhost:/data/data.pth .
 
 ```bash
 # terminal
-webvpn forward --port 8000 --rhost 211.71.15.34 --rport 6000
+wvpn forward --port 8000 --rhost 211.71.15.34 --rport 6000
 
 # web browser
 open http://localhost:8000
