@@ -18,6 +18,9 @@ def get_chisel_download_url() -> str:
     system = platform.system().lower()
     arch = platform.machine().lower()
 
+    if arch == "x86_64":
+        arch = "amd64"
+
     return f"https://gitee.com/vivym/chisel-buaa/releases/download/v0.1.0/chisel-buaa_{VERSION}_{system}_{arch}.gz"
 
 
