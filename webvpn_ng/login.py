@@ -81,7 +81,7 @@ def check_login() -> bool:
     with open(get_user_cache_path(), "r") as f:
         user = json.load(f)
 
-    return login(user["username"], user["password"])
+    return login(user["username"], user["password"], user["token"])
 
 
 def get_cookie() -> str:
